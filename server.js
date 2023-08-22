@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
     const removedTaskIndex = tasks.findIndex(task => task.id === taskId);
     if (removedTaskIndex !== -1) {
       const removedTask = tasks.splice(removedTaskIndex, 1)[0];
-      io.emit('removeTask', removedTaskId); // Emit the 'removeTask' event to all clients
+      io.emit('removeTask', taskId); // Emit the 'removeTask' event to all clients
     }
   });
 });
