@@ -39,6 +39,14 @@ p {
   background: #e74c3c;
 }
 
+.btn--green {
+  background: green;
+}
+
+.btn--gray {
+  background: grey;
+}
+
 .text-input {
   background: none;
   border: none;
@@ -53,6 +61,19 @@ p {
 
 .text-input:focus {
   opacity: 1;
+}
+
+/* Style for Edit input */
+.edit-input {
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #3498db; /* Change the color as needed */
+  padding: 8px 25px 8px 5px;
+  font-family: inherit;
+  outline: none;
+  opacity: 1; /* Keep opacity at 1 for active state */
+  transition: .3s;
 }
 
 
@@ -72,4 +93,13 @@ p {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px dashed rgb(83, 83, 83);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.button-group button {
+  flex: 1; /* Distribute available space equally between buttons */
 }
